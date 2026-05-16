@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Smart Accounting App</title>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        margin: 2rem;
+      }
+      #financial-advice {
+        border: 1px solid #ddd;
+        padding: 1rem;
+        margin-top: 1rem;
+        background-color: #f9f9f9;
+      }
+      #financial-advice p {
+        margin: 0.5rem 0;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Smart Accounting App</h1>
+
+    <!-- Input fields -->
+    <div>
+      <input type="text" id="description" placeholder="Description (e.g., Meal)" />
+      <input type="number" id="amount" placeholder="Amount ($)" min="0.01" step="0.01" />
+      <button id="add-bill">Record Bill</button>
+    </div>
+
+    <!-- Chart area -->
+    <div>
+      <canvas id="chart" style="width: 100%; max-width: 600px; height: 400px;"></canvas>
+    </div>
+
+    <!-- Financial advice -->
+    <div id="financial-advice">AI Financial Advice will appear here</div>
+
+    <!-- Include JS logic from smart_accounting_app.js -->
+    <script src="core/smart_accounting_app.js"></script>
+  </body>
+</html>
